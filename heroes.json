@@ -21,7 +21,7 @@
   ],
   "filters": [
     {
-      "value": "",
+      "value": "all",
       "label": "Все",
       "className": "btn-outline-dark"
     },

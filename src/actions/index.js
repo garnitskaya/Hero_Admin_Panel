@@ -17,20 +17,6 @@ export const heroesFetchingError = () => {
     }
 }
 
-export const heroDelete = (id) => {
-    return {
-        type: 'HERO_DELETE',
-        payload: id
-    }
-}
-
-export const heroCreated = (newHero) => {
-    return {
-        type: 'HERO_CREATED',
-        newHero
-    }
-}
-
 export const filtersFetching = () => {
     return {
         type: 'FILTERS_FETCHING'
@@ -47,5 +33,26 @@ export const filtersFetched = (filters) => {
 export const filtersFetchingError = () => {
     return {
         type: 'FILTERS_FETCHING_ERROR'
+    }
+}
+
+export const activeFilterChanged = (filter) => {
+    return {
+        type: 'ACTIVE_FILTER_CHANGED',
+        payload: filter
+    }
+}
+
+export const heroCreated = (newHero) => {
+    return {
+        type: 'HERO_CREATED',
+        payload: newHero
+    }
+}
+
+export const heroDelete = (id) => {
+    return {
+        type: 'HERO_DELETE',
+        payload: id
     }
 }
